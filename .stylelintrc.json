@@ -1,9 +1,9 @@
 {
   "extends": [
-    "stylelint-config-rational-order",
+    "stylelint-config-rational-order-fix",
     "stylelint-config-recommended-scss"
   ],
-  "plugins": ["stylelint-order", "stylelint-config-rational-order/plugin"],
+  "plugins": ["stylelint-order", "stylelint-config-rational-order-fix/plugin"],
   "rules": {
     "at-rule-no-unknown": [
       true,
