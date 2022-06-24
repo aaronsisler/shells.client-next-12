@@ -9,3 +9,4 @@
 1. Update title in \_app.js
 1. Choose font and add to folder. Update the fonts.scss file.
 1. Update the next.config.js to include the URLs for beta and domain.
+1. Update the branch name in .github files to be main instead of mainxy
