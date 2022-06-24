@@ -37,12 +37,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aaronsisler/clients.hunter-hill.git"
+    "url": "git+https://github.com/aaronsisler/clients.client-name.git"
   },
   "author": "Aaron Sisler",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aaronsisler/clients.hunter-hill/issues"
+    "url": "https://github.com/aaronsisler/clients.client-name/issues"
   },
-  "homepage": "https://github.com/aaronsisler/clients.hunter-hill#readme"
+  "homepage": "https://github.com/aaronsisler/clients.client-name#readme"
 }

@@ -10,7 +10,7 @@ class MyApp extends App {
     return (
       <>
         <Head>
-          <title>Client-Name</title>
+          <title>client-name</title>
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
