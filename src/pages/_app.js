@@ -1,6 +1,7 @@
 import React from "react";
 import App from "next/app";
 import Head from "next/head";
+
 import "../styles/app.scss";
 
 class MyApp extends App {
@@ -10,7 +11,7 @@ class MyApp extends App {
     return (
       <>
         <Head>
-          <title>client-name</title>
+          <title>REPLACE_ME__client-name</title>
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
