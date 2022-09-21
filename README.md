@@ -30,8 +30,14 @@ Do a global find on the repo for the following: `REPLACE_ME__`. This should spee
 
 ### Atomic Elements
 
-Atoms
-Components
-Widgets
-Containers
-Pages
+#### Atoms
+
+#### Components
+
+#### Widgets
+
+#### Containers
+
+#### Pages
+
+A page should contain a `main` markup element wrapping a single imported container.
