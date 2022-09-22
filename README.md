@@ -41,3 +41,41 @@ Do a global find on the repo for the following: `REPLACE_ME__`. This should spee
 #### Pages
 
 A page should contain a `main` markup element wrapping a single imported container.
+
+## Creating S3 and CloudFront
+
+### Creating new S3 bucket
+
+1. Create new bucket
+
+   - Public Access all the boxes
+
+1. Properties tab
+
+   - Enable Static Hosting
+   - Index and Error document
+
+     ```
+     index.html
+     ```
+
+1. Permissions tab
+
+   ```
+   {
+      "Version": "2012-10-17",
+      "Statement": [
+         {
+               "Effect": "Allow",
+               "Principal": "*",
+               "Action": "s3:GetObject",
+               "Resource": "arn:aws:s3:::beta.client-name.com/*"
+         }
+      ]
+   }
+   ```
+
+### Creating Cloudfront distribution
+
+1. Make sure ACM Certificate has domain.com AND \*.domain.com
+1. Origin is the URL from S3 static domain
