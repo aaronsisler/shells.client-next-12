@@ -69,7 +69,7 @@ A page should contain a `main` markup element wrapping a single imported contain
                "Effect": "Allow",
                "Principal": "*",
                "Action": "s3:GetObject",
-               "Resource": "arn:aws:s3:::beta.client-name.com/*"
+               "Resource": "arn:aws:s3:::beta.client-domain-name.com/*"
          }
       ]
    }
@@ -77,5 +77,9 @@ A page should contain a `main` markup element wrapping a single imported contain
 
 ### Creating Cloudfront distribution
 
-1. Make sure ACM Certificate has domain.com AND \*.domain.com
+1. Make sure ACM Certificate has client-domain-name.com AND \*.client-domain-name.com
 1. Origin is the URL from S3 static domain
+1. Viewer -> Viewer protocol policy -> Redirect HTTP to HTTPS
+1. Alternate domain name (CNAME) needs to be client-name.com
+1. Custom SSL certificate needs to have the ACM Certificate that has boht base nad \*.client-domain-name.com
+1. Descritpion at the bottom will have the client-domain-name.com or beta.client-domain-name.com
