@@ -88,9 +88,13 @@ All imports and exports should be named and not defaulted.
 
 **This is dependent on the above ACM Certificate step.**
 
+Only the items listed below need to be updated.
+
 1. Origin is the URL from S3 static domain
    - S3 -> Properties -> Static Website Hosting -> Copy that URL
 1. Viewer -> Viewer protocol policy -> Redirect HTTP to HTTPS
+1. Web Application Firewall (WAF)
+   - Enable security protections
 1. Settings
    - Price Class
      - Use only North America and Europe
