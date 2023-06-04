@@ -40,7 +40,16 @@ All imports and exports should be named and not defaulted.
 - Pages
   - A page should contain a `main` markup element wrapping a single imported container.
 
-## Creating S3, ACM, CloudFront, and Route 53
+## Creating ACM, S3, CloudFront, and Route 53
+
+### Create ACM Certificate
+
+1. Make sure ACM Certificate has:
+   - client-domain-name.com
+   - \*.client-domain-name.com
+1. Request the DNS based validation
+1. This will need to be Verified (not Pending validation) before Cloudfront can be completed
+
 
 ### Creating new S3 bucket
 
@@ -74,14 +83,6 @@ All imports and exports should be named and not defaulted.
         ]
      }
      ```
-
-### Create ACM Certificate
-
-1. Make sure ACM Certificate has:
-   - client-domain-name.com
-   - \*.client-domain-name.com
-1. Request the DNS based validation
-1. This will need to be Verified (not Pending validation) before Cloudfront can be completed
 
 ### Creating Cloudfront distribution
 
